@@ -4,10 +4,18 @@ using UnityEngine;
 
 public class DirtScript : MonoBehaviour
 {
+    /*
+    either i coutn in any way here the dirt objects which are disabled or in the agentscript with an public var 
+
+    */
     // Start is called before the first frame update
     void Start()
     {
-        //transform.localPosition = new Vector3(Random.Range(-74.0f,74.0f),0.5999991f,Random.Range(-74.0f,74.0f));
+        AgentScript agent = new AgentScript();
+        if(agent.counter == 20 || agent.counter == 0){
+            //transform.localPosition = new Vector3(Random.Range(-74.0f,74.0f),0.5999991f,Random.Range(-74.0f,74.0f));
+        }
+       // transform.localPosition = new Vector3(Random.Range(-74.0f,74.0f),0.5999991f,Random.Range(-74.0f,74.0f));
     }
 
     // Update is called once per frame
@@ -17,8 +25,8 @@ public class DirtScript : MonoBehaviour
     }
 
     //method which calls position etc ca
-    void spawnDirtObjects(){
+    /*public void spawnDirtObjects(){
         transform.localPosition = new Vector3(Random.Range(-74.0f,74.0f),0.5999991f,Random.Range(-74.0f,74.0f));
 
-    }
+    }*/
 }
