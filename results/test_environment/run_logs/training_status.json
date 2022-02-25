@@ -2,22 +2,31 @@
     "VacuumCleaner": {
         "checkpoints": [
             {
-                "steps": 17856,
-                "file_path": "results/test_environment/VacuumCleaner/VacuumCleaner-17856.onnx",
+                "steps": 499975,
+                "file_path": "results/test_environment/VacuumCleaner/VacuumCleaner-499975.onnx",
                 "reward": null,
-                "creation_time": 1645798833.917423,
+                "creation_time": 1645803489.1208498,
                 "auxillary_file_paths": [
-                    "results/test_environment/VacuumCleaner/VacuumCleaner-17856.pt"
+                    "results/test_environment/VacuumCleaner/VacuumCleaner-499975.pt"
+                ]
+            },
+            {
+                "steps": 733319,
+                "file_path": "results/test_environment/VacuumCleaner/VacuumCleaner-733319.onnx",
+                "reward": null,
+                "creation_time": 1645804608.0100741,
+                "auxillary_file_paths": [
+                    "results/test_environment/VacuumCleaner/VacuumCleaner-733319.pt"
                 ]
             }
         ],
         "final_checkpoint": {
-            "steps": 17856,
+            "steps": 733319,
             "file_path": "results/test_environment/VacuumCleaner.onnx",
             "reward": null,
-            "creation_time": 1645798833.917423,
+            "creation_time": 1645804608.0100741,
             "auxillary_file_paths": [
-                "results/test_environment/VacuumCleaner/VacuumCleaner-17856.pt"
+                "results/test_environment/VacuumCleaner/VacuumCleaner-733319.pt"
             ]
         }
     },

@@ -21,7 +21,7 @@ behaviors:
     reward_signals:
       extrinsic:
         gamma: 0.99
-        strength: 0.1
+        strength: 1.0
         network_settings:
           normalize: false
           hidden_units: 128
@@ -31,7 +31,7 @@ behaviors:
           goal_conditioning_type: hyper
       gail:
         gamma: 0.99
-        strength: 1.0
+        strength: 0.5
         network_settings:
           normalize: false
           hidden_units: 128
@@ -55,7 +55,7 @@ behaviors:
     behavioral_cloning:
       demo_path: Demos/18_15Ray.demo
       steps: 0
-      strength: 1.0
+      strength: 0.5
       samples_per_update: 0
       num_epoch: null
       batch_size: null

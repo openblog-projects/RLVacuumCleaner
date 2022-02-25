@@ -150,16 +150,9 @@ public class TestAgent : Agent
 
     private void OnTriggerStay(Collider other){
         if(other.tag == "wall"){
-            Debug.Log("wall");
+            //Debug.Log("wall");
             AddReward(-0.1f);
         }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-
-        //Debug.Log(collision.gameObject.tag);
-        
     }
 
     public override void Heuristic(in ActionBuffers actionsOut){
