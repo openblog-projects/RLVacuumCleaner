@@ -31,7 +31,6 @@ public class FoodCollectorSettings : MonoBehaviour
         {
             fa.ResetFoodArea(agents);
         }
-
         totalScore = 0;
     }
 

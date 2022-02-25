@@ -1,0 +1,29 @@
+{
+    "VacuumCleaner": {
+        "checkpoints": [
+            {
+                "steps": 17856,
+                "file_path": "results/test_environment/VacuumCleaner/VacuumCleaner-17856.onnx",
+                "reward": null,
+                "creation_time": 1645798833.917423,
+                "auxillary_file_paths": [
+                    "results/test_environment/VacuumCleaner/VacuumCleaner-17856.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 17856,
+            "file_path": "results/test_environment/VacuumCleaner.onnx",
+            "reward": null,
+            "creation_time": 1645798833.917423,
+            "auxillary_file_paths": [
+                "results/test_environment/VacuumCleaner/VacuumCleaner-17856.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1"
+    }
+}

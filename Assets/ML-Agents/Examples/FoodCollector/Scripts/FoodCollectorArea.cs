@@ -34,7 +34,6 @@ public class FoodCollectorArea : Area
                 agent.transform.rotation = Quaternion.Euler(new Vector3(0f, Random.Range(0, 360)));
             }
         }
-
         CreateFood(numFood, food);
         CreateFood(numBadFood, badFood);
     }

@@ -1,0 +1,89 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1645775954",
+        "python_version": "3.9.7 (default, Sep 16 2021, 08:50:36) \n[Clang 10.0.0 ]",
+        "command_line_arguments": "/Users/maxhager/opt/anaconda3/bin/mlagents-learn config/VacuumCleanerAgent.yaml --run-id=imi3",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.8.1",
+        "numpy_version": "1.20.3",
+        "end_time_seconds": "1645775963"
+    },
+    "total": 9.266477917,
+    "count": 1,
+    "self": 0.0054230840000002445,
+    "children": {
+        "run_training.setup": {
+            "total": 0.07384262499999994,
+            "count": 1,
+            "self": 0.07384262499999994
+        },
+        "TrainerController.start_learning": {
+            "total": 9.187212208,
+            "count": 1,
+            "self": 3.0082999998626292e-05,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 9.186562084,
+                    "count": 1,
+                    "self": 8.543305917,
+                    "children": {
+                        "demo_to_buffer": {
+                            "total": 0.6432561670000005,
+                            "count": 1,
+                            "self": 8.816700000124911e-05,
+                            "children": {
+                                "load_demonstration": {
+                                    "total": 0.021489749999998864,
+                                    "count": 1,
+                                    "self": 0.01989179099999916,
+                                    "children": {
+                                        "read_file": {
+                                            "total": 0.0015979589999997046,
+                                            "count": 1,
+                                            "self": 0.0015979589999997046
+                                        }
+                                    }
+                                },
+                                "make_demo_buffer": {
+                                    "total": 0.6216782500000004,
+                                    "count": 1,
+                                    "self": 0.07721381700002361,
+                                    "children": {
+                                        "steps_from_proto": {
+                                            "total": 0.5444644329999768,
+                                            "count": 5216,
+                                            "self": 0.2356902789998525,
+                                            "children": {
+                                                "_process_rank_one_or_two_observation": {
+                                                    "total": 0.3087741540001243,
+                                                    "count": 20864,
+                                                    "self": 0.3087741540001243
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
+                "TrainerController._save_models": {
+                    "total": 0.0006200410000012369,
+                    "count": 1,
+                    "self": 8.724900000167679e-05,
+                    "children": {
+                        "RLTrainer._checkpoint": {
+                            "total": 0.0005327919999995601,
+                            "count": 1,
+                            "self": 0.0005327919999995601
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
