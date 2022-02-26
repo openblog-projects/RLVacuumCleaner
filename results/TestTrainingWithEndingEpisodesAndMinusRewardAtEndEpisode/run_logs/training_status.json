@@ -1,0 +1,29 @@
+{
+    "VacuumCleaner": {
+        "checkpoints": [
+            {
+                "steps": 93491,
+                "file_path": "results/TestTrainingWithEndingEpisodesAndMinusRewardAtEndEpisode/VacuumCleaner/VacuumCleaner-93491.onnx",
+                "reward": null,
+                "creation_time": 1645883409.657759,
+                "auxillary_file_paths": [
+                    "results/TestTrainingWithEndingEpisodesAndMinusRewardAtEndEpisode/VacuumCleaner/VacuumCleaner-93491.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 93491,
+            "file_path": "results/TestTrainingWithEndingEpisodesAndMinusRewardAtEndEpisode/VacuumCleaner.onnx",
+            "reward": null,
+            "creation_time": 1645883409.657759,
+            "auxillary_file_paths": [
+                "results/TestTrainingWithEndingEpisodesAndMinusRewardAtEndEpisode/VacuumCleaner/VacuumCleaner-93491.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1"
+    }
+}

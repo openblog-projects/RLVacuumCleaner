@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using Random=UnityEngine.Random;
+using System.Globalization;
+
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 using Unity.MLAgents.Sensors;
@@ -80,6 +84,10 @@ public class AgentScript : Agent
     public int counter = 0;
 
     public override void OnEpisodeBegin(){
+        Debug.Log("HAllo");
+        Debug.Log(DateTime.Now.TimeOfDay);
+
+        //ich kann hier eine date time hinsetzen und diese mit date time aus collectobservations vergleichen, wenn die größer ist als 15 dann EndEpisode
         GameObject[] goals = GameObject.FindGameObjectsWithTag("goal");
         foreach (GameObject goal in goals)
         {
