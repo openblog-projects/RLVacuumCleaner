@@ -18,6 +18,12 @@ behaviors:
       extrinsic:
         gamma: 0.99
         strength: 1.0
+      gail:
+        strength: 1.0
+        demo_path: Demos/18_15Ray.demo
+    behavioral_cloning:
+      strength: 0.5
+      demo_path: Demos/18_15Ray.demo
     max_steps: 1500000
     time_horizon: 64
     summary_freq: 10000

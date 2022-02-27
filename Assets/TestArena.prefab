@@ -829,7 +829,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 1
+  m_BehaviorType: 0
   m_BehaviorName: VacuumCleaner
   TeamId: 0
   m_UseChildSensors: 1
@@ -916,10 +916,10 @@ MonoBehaviour:
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
   - goal
-  m_RaysPerDirection: 15
+  m_RaysPerDirection: 18
   m_MaxRayDegrees: 180
   m_SphereCastRadius: 0.5
-  m_RayLength: 5
+  m_RayLength: 15
   m_RayLayerMask:
     serializedVersion: 2
     m_Bits: 8

@@ -1,0 +1,42 @@
+{
+    "name": "root",
+    "metadata": {
+        "timer_format_version": "0.1.0",
+        "start_time_seconds": "1645948802",
+        "python_version": "3.9.7 (default, Sep 16 2021, 08:50:36) \n[Clang 10.0.0 ]",
+        "command_line_arguments": "/Users/maxhager/opt/anaconda3/bin/mlagents-learn config/VacuumCleanerAgent.yaml --run-id=MassTrainingWithFirstConfigs",
+        "mlagents_version": "0.27.0",
+        "mlagents_envs_version": "0.27.0",
+        "communication_protocol_version": "1.5.0",
+        "pytorch_version": "1.8.1",
+        "numpy_version": "1.20.3",
+        "end_time_seconds": "1645948811"
+    },
+    "total": 8.495586375,
+    "count": 1,
+    "self": 0.017272583000000452,
+    "children": {
+        "run_training.setup": {
+            "total": 0.07387954199999991,
+            "count": 1,
+            "self": 0.07387954199999991
+        },
+        "TrainerController.start_learning": {
+            "total": 8.40443425,
+            "count": 1,
+            "self": 0.00018508299999986377,
+            "children": {
+                "TrainerController._reset_env": {
+                    "total": 8.404125208,
+                    "count": 1,
+                    "self": 8.404125208
+                },
+                "TrainerController._save_models": {
+                    "total": 0.00012395899999972926,
+                    "count": 1,
+                    "self": 0.00012395899999972926
+                }
+            }
+        }
+    }
+}

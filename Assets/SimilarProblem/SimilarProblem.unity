@@ -190,6 +190,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &307043203
@@ -258,6 +263,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -328,6 +338,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (9)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &596094300
@@ -396,6 +411,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (13)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -466,6 +486,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (10)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &702772600
@@ -534,6 +559,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -604,6 +634,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &714234535
@@ -672,6 +707,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (8)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -742,6 +782,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (12)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &1053188994
@@ -810,6 +855,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (11)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -880,6 +930,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (14)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &1152230832
@@ -948,6 +1003,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -1018,6 +1078,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (19)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &1270934791
@@ -1087,6 +1152,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (16)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &1369208105
@@ -1155,6 +1225,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (17)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -1235,7 +1310,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1518181205}
   m_LocalRotation: {x: 0.6576159, y: -0, z: -0, w: 0.75335336}
-  m_LocalPosition: {x: 338.4, y: 66.4, z: -4}
+  m_LocalPosition: {x: 338.4, y: 61.3, z: -4}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1308,6 +1383,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (18)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &1627058092
@@ -1377,6 +1457,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &1655213828
@@ -1445,6 +1530,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena (15)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
@@ -1608,6 +1698,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: TestArena (7)
       objectReference: {fileID: 0}
+    - target: {fileID: 3622060684435790432, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
 --- !u!1001 &3622060686350985471
@@ -1625,7 +1720,7 @@ PrefabInstance:
     - target: {fileID: 3622060684435790431, guid: 901274f19c70144eab5433593b3d3c9d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 322.19998
+      value: 322.25
       objectReference: {fileID: 0}
     - target: {fileID: 3622060684435790431, guid: 901274f19c70144eab5433593b3d3c9d,
         type: 3}
@@ -1676,6 +1771,51 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: TestArena
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870400, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: MaxStep
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870401, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_RayLength
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870401, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_RaysPerDirection
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870401, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_RayLayerMask.m_Bits
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870402, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.14
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870402, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.32
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870406, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_Model
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060685232870406, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_BehaviorType
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3622060686515915226, guid: 901274f19c70144eab5433593b3d3c9d,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.57
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 901274f19c70144eab5433593b3d3c9d, type: 3}
