@@ -241,6 +241,7 @@ GameObject:
   - component: {fileID: 6793512382789421068}
   - component: {fileID: 6793512382789421069}
   - component: {fileID: 6793512382789421070}
+  - component: {fileID: 9069784603338255175}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -405,7 +406,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_SensorName: RayPerceptionSensor
   m_DetectableTags:
-  - collectible
   - platform
   m_RaysPerDirection: 6
   m_MaxRayDegrees: 70
@@ -417,7 +417,7 @@ MonoBehaviour:
   m_ObservationStacks: 1
   rayHitColor: {r: 1, g: 0, b: 0, a: 1}
   rayMissColor: {r: 1, g: 1, b: 1, a: 1}
-  m_StartVerticalOffset: 0
+  m_StartVerticalOffset: -0.3
   m_EndVerticalOffset: 0
 --- !u!114 &6793512382789421070
 MonoBehaviour:
@@ -433,3 +433,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DecisionPeriod: 5
   TakeActionsBetweenDecisions: 1
+--- !u!114 &9069784603338255175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6793512382789421071}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c53b192a7e9b8414ea609232e586990e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveSpeed: 2
+  turnSpeed: 300

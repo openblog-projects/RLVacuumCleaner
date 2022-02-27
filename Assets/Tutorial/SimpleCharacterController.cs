@@ -4,36 +4,37 @@ using UnityEngine;
 
 public class SimpleCharacterController : MonoBehaviour
 {
-
-    //public float slopeLimit = 45f;
+    public float slopeLimit = 45f;
     [Tooltip("Move speed in meters/second")]
     public float moveSpeed = 2f;
     [Tooltip("Turn speed in degrees/second, left (+) or right (-)")]
     public float turnSpeed = 300;
-    //public bool allowJump = false;
-    //public float jumpSpeed = 4f;
+    [Tooltip("Whether the character can jump")]
+    public bool allowJump = false;
+    [Tooltip("Upward speed to apply when jumping in meters/second")]
+    public float jumpSpeed = 4f;
 
     public bool IsGrounded { get; private set; }
     public float ForwardInput { get; set; }
     public float TurnInput { get; set; }
-    //public bool JumpInput { get; set; }
+    public bool JumpInput { get; set; }
 
-        new private Rigidbody rigidbody;
-    //private CapsuleCollider capsuleCollider;
+    new private Rigidbody rigidbody;
+    private CapsuleCollider capsuleCollider;
 
     private void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
-        //capsuleCollider = GetComponent<CapsuleCollider>();
+        capsuleCollider = GetComponent<CapsuleCollider>();
     }
 
-     private void FixedUpdate()
+    private void FixedUpdate()
     {
-        //CheckGrounded();
+        CheckGrounded();
         ProcessActions();
     }
 
-     /*private void CheckGrounded()
+    private void CheckGrounded()
     {
         IsGrounded = false;
         float capsuleHeight = Mathf.Max(capsuleCollider.radius * 2f, capsuleCollider.height);
@@ -52,9 +53,9 @@ public class SimpleCharacterController : MonoBehaviour
                     IsGrounded = true;
             }
         }
-    }*/
+    }
 
-    private void ProcessActions()
+     private void ProcessActions()
     {
         // Turning
         if (TurnInput != 0f)
@@ -69,9 +70,10 @@ public class SimpleCharacterController : MonoBehaviour
         rigidbody.MovePosition(transform.position + move);
 
         // Jump
-        /*if (JumpInput && allowJump && IsGrounded)
+        if (JumpInput && allowJump && IsGrounded)
         {
             rigidbody.AddForce(transform.up * jumpSpeed, ForceMode.VelocityChange);
-        }*/
+        }
     }
+
 }
