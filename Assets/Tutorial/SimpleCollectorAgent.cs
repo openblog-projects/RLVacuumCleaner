@@ -1,23 +1,34 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
 using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
-using UnityEngine;
+
 
 public class SimpleCollectorAgent : Agent
 {
+
+    [Tooltip("Move speed in meters/second")]
+    public float moveSpeed = 2f;
+    [Tooltip("Turn speed in degrees/second, left (+) or right (-)")]
+    public float turnSpeed = 300;
+
+    [Tooltip("The platform to be moved around")]
     public GameObject platform;
 
     private Vector3 startPosition;
     private SimpleCharacterController characterController;
     new private Rigidbody rigidbody;
 
-     public override void Initialize()
+    public override void Initialize()
     {
         startPosition = transform.position;
         characterController = GetComponent<SimpleCharacterController>();
         rigidbody = GetComponent<Rigidbody>();
     }
 
-     public override void OnEpisodeBegin()
+    public override void OnEpisodeBegin()
     {
         // Reset agent position, rotation
         transform.position = startPosition;
@@ -58,19 +69,32 @@ public class SimpleCollectorAgent : Agent
         float horizontal = actions.DiscreteActions[1] <= 1 ? actions.DiscreteActions[1] : -1;
         bool jump = actions.DiscreteActions[2] > 0;
 
-        characterController.ForwardInput = vertical;
+        /*characterController.ForwardInput = vertical;
         characterController.TurnInput = horizontal;
-        characterController.JumpInput = jump;
+        characterController.JumpInput = jump;*/
+
+        // Turning
+        if (horizontal != 0f)
+        {
+            float angle = Mathf.Clamp(horizontal, -1f, 1f) * turnSpeed;
+            transform.Rotate(Vector3.up, Time.fixedDeltaTime * angle);
+        }
+
+        // Movement
+        Vector3 move = transform.forward * Mathf.Clamp(vertical, -1f, 1f) *
+            moveSpeed * Time.fixedDeltaTime;
+        rigidbody.MovePosition(transform.position + move);
     }
 
     private void OnTriggerEnter(Collider other)
     {
         // If the other object is a collectible, reward and end episode
-        if (other.tag == "collectible")
+        if (other.tag == "platform")
         {
             AddReward(1f);
             EndEpisode();
         }
     }
+
 
 }
