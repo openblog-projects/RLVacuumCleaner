@@ -1,0 +1,29 @@
+{
+    "DirtAgent": {
+        "checkpoints": [
+            {
+                "steps": 92639,
+                "file_path": "results/ThreeDirt/DirtAgent/DirtAgent-92639.onnx",
+                "reward": 3.0,
+                "creation_time": 1646262044.959115,
+                "auxillary_file_paths": [
+                    "results/ThreeDirt/DirtAgent/DirtAgent-92639.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 92639,
+            "file_path": "results/ThreeDirt/DirtAgent.onnx",
+            "reward": 3.0,
+            "creation_time": 1646262044.959115,
+            "auxillary_file_paths": [
+                "results/ThreeDirt/DirtAgent/DirtAgent-92639.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1"
+    }
+}

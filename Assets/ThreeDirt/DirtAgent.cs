@@ -6,8 +6,14 @@ using Unity.MLAgents;
 using Unity.MLAgents.Actuators;
 
 
-public class SimpleCollectorAgent : Agent
+public class DirtAgent : Agent
 {
+    /*
+    if agents hits dirt, dirt disappears
+    random spawn of dirt
+    if agents moves to far away respawn adjustments
+    */
+    public int counter = 0;
 
     [Tooltip("Move speed in meters/second")]
     public float moveSpeed = 2f;
@@ -15,16 +21,21 @@ public class SimpleCollectorAgent : Agent
     public float turnSpeed = 300;
 
     [Tooltip("The platform to be moved around")]
-    public GameObject platform;
+    public GameObject goal;
+    //ich kann für jedes gameobject ein einzelnes objekt machen
+
+    public GameObject goal2;
+
+    public GameObject goal3;
 
     private Vector3 startPosition;
-    private SimpleCharacterController characterController;
+    //private SimpleCharacterController characterController;
     new private Rigidbody rigidbody;
 
     public override void Initialize()
     {
         startPosition = transform.position;
-        characterController = GetComponent<SimpleCharacterController>();
+        //characterController = GetComponent<SimpleCharacterController>();
         rigidbody = GetComponent<Rigidbody>();
     }
 
@@ -35,8 +46,14 @@ public class SimpleCollectorAgent : Agent
         transform.rotation = Quaternion.Euler(Vector3.up * Random.Range(0f, 360f));
         rigidbody.velocity = Vector3.zero;
 
+        goal.SetActive(true);
+        goal2.SetActive(true);
+        goal3.SetActive(true);
+
         // Reset platform position (5 meters away from the agent in a random direction)
-        platform.transform.position = startPosition + Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)) * Vector3.forward * 5f;
+        goal.transform.position = startPosition + Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)) * Vector3.forward * 5f;
+        goal2.transform.position = startPosition + Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)) * Vector3.forward * 5f;
+        goal3.transform.position = startPosition + Quaternion.Euler(Vector3.up * Random.Range(0f, 360f)) * Vector3.forward * 5f;
     }
 
     public override void Heuristic(in ActionBuffers actionsOut)
@@ -57,7 +74,7 @@ public class SimpleCollectorAgent : Agent
     public override void OnActionReceived(ActionBuffers actions)
     {
         // Punish and end episode if the agent strays too far
-        if (Vector3.Distance(startPosition, transform.position) > 10f)
+        if (Vector3.Distance(startPosition, transform.position) > 15f)
         {
             AddReward(-1f);
             EndEpisode();
@@ -86,15 +103,23 @@ public class SimpleCollectorAgent : Agent
         rigidbody.MovePosition(transform.position + move);
     }
 
+    
+
     private void OnTriggerEnter(Collider other)
     {
-        // If the other object is a collectible, reward and end episode
-        if (other.tag == "platform")
+        //Debug.Log(other);
+
+        if (other.gameObject.tag == "goal")
         {
+            //Destroy(other.gameObject);
+            other.gameObject.SetActive(false);
+            counter += 1;
             AddReward(1f);
-            EndEpisode();
+            if(counter == 3){
+                counter = 0;
+                EndEpisode();
+            }
         }
+        // If the other object is a collectible, reward and end episode
     }
-
-
 }
