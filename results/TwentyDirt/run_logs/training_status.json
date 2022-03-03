@@ -1,0 +1,47 @@
+{
+    "TwentyDirtAgent": {
+        "checkpoints": [
+            {
+                "steps": 499872,
+                "file_path": "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-499872.onnx",
+                "reward": 14.0,
+                "creation_time": 1646265722.916513,
+                "auxillary_file_paths": [
+                    "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-499872.pt"
+                ]
+            },
+            {
+                "steps": 999998,
+                "file_path": "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-999998.onnx",
+                "reward": null,
+                "creation_time": 1646266290.268779,
+                "auxillary_file_paths": [
+                    "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-999998.pt"
+                ]
+            },
+            {
+                "steps": 1000126,
+                "file_path": "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1000126.onnx",
+                "reward": null,
+                "creation_time": 1646266290.378382,
+                "auxillary_file_paths": [
+                    "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1000126.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 1000126,
+            "file_path": "results/TwentyDirt/TwentyDirtAgent.onnx",
+            "reward": null,
+            "creation_time": 1646266290.378382,
+            "auxillary_file_paths": [
+                "results/TwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1000126.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1"
+    }
+}
