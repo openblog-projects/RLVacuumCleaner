@@ -289,7 +289,7 @@ MonoBehaviour:
     hasUpgradedBrainParametersWithActionSpec: 1
   m_Model: {fileID: 0}
   m_InferenceDevice: 0
-  m_BehaviorType: 0
+  m_BehaviorType: 1
   m_BehaviorName: TwentyDirtAgent
   TeamId: 0
   m_UseChildSensors: 1
@@ -356,26 +356,27 @@ MonoBehaviour:
   counter: 0
   moveSpeed: 2
   turnSpeed: 300
-  goal: {fileID: 5728020511546735988}
-  goal2: {fileID: 5728020513207418574}
-  goal3: {fileID: 5728020513346907010}
-  goal4: {fileID: 5728020513004631625}
-  goal5: {fileID: 5728020512853022172}
-  goal6: {fileID: 5728020512090155962}
-  goal7: {fileID: 5728020511716602903}
-  goal8: {fileID: 5728020511422758222}
-  goal9: {fileID: 5728020511478804475}
-  goal10: {fileID: 5728020512607399686}
-  goal11: {fileID: 5728020512092380668}
-  goal12: {fileID: 5728020512146268915}
-  goal13: {fileID: 5728020513032239490}
-  goal14: {fileID: 5728020511843186855}
-  goal15: {fileID: 5728020511393586541}
-  goal16: {fileID: 5728020513381080086}
-  goal17: {fileID: 5728020512775534713}
-  goal18: {fileID: 5728020512630651481}
-  goal19: {fileID: 5728020512593999945}
-  goal20: {fileID: 5728020512492392846}
+  goals:
+  - {fileID: 5728020511546735988}
+  - {fileID: 5728020513207418574}
+  - {fileID: 5728020513346907010}
+  - {fileID: 5728020513004631625}
+  - {fileID: 5728020512853022172}
+  - {fileID: 5728020512090155962}
+  - {fileID: 5728020511716602903}
+  - {fileID: 5728020511422758222}
+  - {fileID: 5728020511478804475}
+  - {fileID: 5728020512607399686}
+  - {fileID: 5728020512092380668}
+  - {fileID: 5728020512146268915}
+  - {fileID: 5728020513032239490}
+  - {fileID: 5728020511843186855}
+  - {fileID: 5728020511393586541}
+  - {fileID: 5728020513381080086}
+  - {fileID: 5728020512775534713}
+  - {fileID: 5728020512630651481}
+  - {fileID: 5728020512593999945}
+  - {fileID: 5728020512492392846}
 --- !u!1001 &5941309776908652276
 PrefabInstance:
   m_ObjectHideFlags: 0

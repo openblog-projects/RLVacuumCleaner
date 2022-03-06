@@ -1,0 +1,65 @@
+{
+    "TwentyDirtAgent": {
+        "checkpoints": [
+            {
+                "steps": 999911,
+                "file_path": "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-999911.onnx",
+                "reward": 14.0,
+                "creation_time": 1646328516.790627,
+                "auxillary_file_paths": [
+                    "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-999911.pt"
+                ]
+            },
+            {
+                "steps": 1499873,
+                "file_path": "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1499873.onnx",
+                "reward": 3.0,
+                "creation_time": 1646329157.9608908,
+                "auxillary_file_paths": [
+                    "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1499873.pt"
+                ]
+            },
+            {
+                "steps": 1999900,
+                "file_path": "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1999900.onnx",
+                "reward": 6.0,
+                "creation_time": 1646329794.292533,
+                "auxillary_file_paths": [
+                    "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-1999900.pt"
+                ]
+            },
+            {
+                "steps": 2499882,
+                "file_path": "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-2499882.onnx",
+                "reward": null,
+                "creation_time": 1646330437.340346,
+                "auxillary_file_paths": [
+                    "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-2499882.pt"
+                ]
+            },
+            {
+                "steps": 2500010,
+                "file_path": "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-2500010.onnx",
+                "reward": null,
+                "creation_time": 1646330437.421917,
+                "auxillary_file_paths": [
+                    "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-2500010.pt"
+                ]
+            }
+        ],
+        "final_checkpoint": {
+            "steps": 2500010,
+            "file_path": "results/FinalTwentyDirt/TwentyDirtAgent.onnx",
+            "reward": null,
+            "creation_time": 1646330437.421917,
+            "auxillary_file_paths": [
+                "results/FinalTwentyDirt/TwentyDirtAgent/TwentyDirtAgent-2500010.pt"
+            ]
+        }
+    },
+    "metadata": {
+        "stats_format_version": "0.3.0",
+        "mlagents_version": "0.27.0",
+        "torch_version": "1.8.1"
+    }
+}
